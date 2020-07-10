@@ -5,6 +5,9 @@ namespace Luzilla\HCloud\Housekeeping;
 require 'vendor/autoload.php';
 
 $apiKey = getenv('HCLOUD_TOKEN');
+if (empty($apiKey)) {
+    die('Missing in environment: HCLOUD_TOKEN');
+}
 
 echo "Knock, knock!" . PHP_EOL;
 sleep(1);
