@@ -1,0 +1,15 @@
+---
+on:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  housekeeping:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/luzilla/hcloud-housekeeping:latest
+      env:
+        HCLOUD_TOKEN: ${{ secrets.HCLOUD_TOKEN }}
+    steps:
+      - run: /app/housekeeping.php
+
