@@ -1,5 +1,8 @@
 {
+    "name": "luzilla/hcloud-housekeeping",
+    "description": "An auxillary script for Molecule to clean-up orphaned instances, volumes and SSH keys on Hetzner Cloud.",
     "require": {
         "lkdevelopment/hetzner-cloud-php-sdk": "^2.1"
-    }
+    },
+    "license": "BSD-2-Clause"
 }

@@ -1,6 +1,6 @@
 # hcloud housekeeping
 
-Auxillary script for molecule. Thanks, molecule.
+An auxillary script for Molecule to clean-up orphaned instances, volumes and SSH keys on Hetzner Cloud.
 
 ## Usage
 
@@ -10,3 +10,7 @@ Knock, knock!
 This is Hetzner Cloud housekeeping!
 
 ```
+
+## License
+
+BSD-2-Clause
